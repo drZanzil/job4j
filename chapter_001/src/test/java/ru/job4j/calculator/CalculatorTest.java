@@ -18,27 +18,10 @@ public class CalculatorTest {
     @Test
     public void WhenAddOneMinusOneThenZero() {
     	Calculator calc = new Calculator();
-    	calc.add(1D, 1D);
-    	substruct result = calc.getResult();
-    	substruct expected = 0D
+    	calc.multiple(2D, 2D);
+    	double result = calc.getResult();
+    	double expected = 4D;
     	assertThat (result, is(expected));
     }
     
-    @Test
-    public void WhenAddTwoDivTwoThenOne() {
-    	Calculator calc = new Calculator();
-    	calc.add (2D, 2D);
-    	div result = calc.getResult();
-    	div expected = 1D
-    	assertThat (result, is(expected));
-    }
-    
-    @Test
-    public void WhenAddTwoMultipleTwoThenFour() {
-    	Calculator calc = new Calculator();
-    	calc.add (2D, 2D);
-    	multiple result = calc.getResult();
-    	multiple expected = 4D
-    	assertThat (result, is(expected));
-    }
 }
